@@ -1,4 +1,5 @@
 import "./App.css";
+import Map from "./Map";
 import solarData from "./solar-data";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         </div>
       </div>
       <div className="info-section">
+        <Map eventData={places} />
         {places.map((place, index) => (
           <div key={index} style={{ textAlign: "left", padding: 10 }}>
             <div style={{ padding: 5 }}>
